@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Personalizado</title>
+</head>
+<body>
+  <h2>Customize Screen</h2>
+
+  <form id="customForm">
+    <!-- Input text -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <!-- Select option -->
+    <label for="color">Color:</label>
+    <select id="color" name="color">
+      <option value="">Seleccione un color</option>
+      <option value="Rojo">Rojo</option>
+      <option value="Verde">Verde</option>
+      <option value="Azul">Azul</option>
+    </select><br><br>
+
+    <!-- Input radio -->
+    <p>Equipo:</p>
+    <label><input type="radio" name="equipo" value="Gatos"> Gatos</label>
+    <label><input type="radio" name="equipo" value="Mapaches"> Mapaches</label>
+    <label><input type="radio" name="equipo" value="Perros"> Perros</label><br><br>
+
+    <!-- Botón enviar -->
+    <button type="button" id="btnEnviar">Enviar</button>
+  </form>
+
+  <h3>Resultado:</h3>
+  <p id="resultado"></p>
+
+  <!-- Aquí enlazamos el archivo JS -->
+  <script src="app.js"></script>
+</body>
+</html>
