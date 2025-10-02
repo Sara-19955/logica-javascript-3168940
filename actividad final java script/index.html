@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acordezon - Proyecto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="cuerpo">
+
+    <header>
+        <div class="logo-area">
+            <img src="logo acordezon sin tipografia 2 (1).png" alt="Logo acordezon" class="logo">
+            <h1 style="font-family: 'Great Vibes', cursive;">acordezon</h1>
+        </div>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#proyecto">Proyecto</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="home" class="seccion">
+        <h2>Inicio</h2>
+        <p>Nuestra misión, es buscar crear experiencias únicas que inspiren, entretengan y fortalezcan el vínculo entre las personas y la cultura narrativa, impulsando la creatividad de Mateo, Sara e Isabel como un equipo innovador.
+Nuestra visión es lograr no solo impactar audiencias globales, sino que también reaviva el vallenato como patrimonio cultural de Colombia, preservando su esencia y transmitiéndola a nuevas generaciones.</p>
+        <button id="btnColor"> Cambiar Fondo</button>
+        <button class="btnNav" data-target="proyecto">Siguiente &rarr;</button>
+    </section>
+
+    <section id="proyecto" class="seccion">
+        <h2>Nuestro Proyecto</h2>
+        <p>“El eco que conquisto corazones”
+Comic interactivo
+El proyecto inicial tomó forma en el cómic digital interactivo El Eco que conquistó corazones, inspirado en la vida y el legado artístico de Rafael Orozco. Este formato permite que los lectores no sean simples espectadores, sino participantes activos en la historia, viviendo la música vallenata como un lenguaje emocional que trasciende generaciones.
+
+</p>
+        <button class="btnNav" data-target="galeria">Siguiente &rarr;</button>
+    </section>
+
+    <section id="galeria" class="seccion">
+        <h2>Galería & Preguntas</h2>
+
+        <div class="imagenes-container">
+            <img src="imagen rafael 1.jpeg" alt="Imagen 1" class="img-galeria">
+            <img src="imagen rafael 2.jpeg" alt="Imagen 2" class="img-galeria">
+            <img src="image.png" alt="Imagen 3" class="img-galeria">
+        </div>
+
+        <button id="btnToggleFAQ">Preguntas Frecuentes</button>
+        <div id="faqBox" class="oculto" style="margin-top: 15px; padding: 15px; background: #f1cca6; border-radius: 5px;">
+            <p>1.¿Qué dispositivos son compatibles? - Nuestra plataforma es compatible con smartphones, tablets, computadoras y otros dispositivos modernos. </p>
+            <p>2. ¿Puedo acceder desde cualquier lugar?- Los lectores pueden tomar decisiones que modifican la historia, explorar contenido adicional y sumergirse completamente en el mundo narrativo.</p>
+            <p>3. ¿Qué es un cómic transmedia? - Un cómic transmedia es una narrativa interactiva que se extiende a través de múltiples plataformas y medios, permitiendo una experiencia única e inmersiva.</p>
+        </div>
+
+
+        <button class="btnNav" data-target="contacto">Siguiente &rarr;</button>
+    </section>
+
+    <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>Envíanos tu mensaje:</p>
+    
+    <form id="contactForm" class="form-contacto-simple">
+        <input type="text" id="nameInput" placeholder="Tu Nombre" required>
+        <textarea id="messageInput" placeholder="Escribe tu mensaje aquí" required></textarea>
+        <button type="submit" id="btnSubmitMessage">Enviar Mensaje</button>
+    </form>
+    
+    <p id="confirmationMsg" class="oculto mensaje-confirmacion"> ¡Mensaje enviado con éxito!</p>
+
+    <button class="btnNav" data-target="home">Volver al Inicio &uarr;</button>
+</section>
+    <div id="modal" class="oculto">
+        <span id="cerrarModal">&times;</span>
+        <img id="modalImg" src="" alt="Ampliada">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
